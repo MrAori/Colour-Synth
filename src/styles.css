@@ -1,0 +1,221 @@
+/* Importing Roboto via Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body {
+  background-color: rgb(49, 55, 61);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: -1px 1px 0px #000, 1px 1px 10px #000, 1px -1px 0 #000,
+    -1px -1px 0px #000, 0px 0px 30px #fff;
+}
+
+.about-title {
+  font-size: 30px;
+  text-shadow: 2px 0px 10px #aa9dff;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px auto;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+#cs {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+}
+.main {
+  margin-bottom: 2em;
+}
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: calc(100% - 3em);
+  max-width: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 6px;
+  /* Fake input */
+}
+.container img {
+  display: block;
+  width: 100%;
+  cursor: crosshair;
+  margin: 10px auto;
+}
+.container .preview {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  background: white;
+}
+.container #image-input {
+  opacity: 0;
+  visibility: hidden;
+}
+.container #fake {
+  padding: 15px;
+  display: input-block;
+  overflow: hidden;
+  width: auto;
+  cursor: pointer;
+  font-size: 150%;
+  float: left;
+  background: #000;
+  background: #197de4;
+  border-radius: 12px;
+  color: #ececec;
+  transition: all 500ms ease;
+}
+.container #fake:hover,
+.container #fake:focus {
+  background: #0f4b88;
+  color: #ececec;
+  transition: all 500ms ease;
+}
+
+.container #synth-play {
+  padding: 15px;
+  display: input-block;
+  overflow: hidden;
+  width: auto;
+  cursor: pointer;
+  font-size: 150%;
+  margin-left: 5px;
+  border-radius: 12px;
+  float: left;
+  background: #000;
+  background: #2c68a3;
+  color: #ececec;
+  transition: all 500ms ease;
+}
+.container #synth-play:hover,
+.container #synth-play:focus {
+  background: #0b2a49;
+  color: #ececec;
+  transition: all 500ms ease;
+}
+@media (min-width: 768px) {
+  .container {
+    width: calc(100% - 10em);
+  }
+}
+
+.color {
+  display: inline-block;
+  width: calc(100% / 4 - 1.2em);
+  height: 80px;
+  margin: 0.5em;
+  font-size: 12px;
+  text-align: center;
+  line-height: 80px;
+  border: 1px solid #ececec;
+  box-shadow: 0 3px 3px #b9b9b9;
+  -webkit-animation: showColor 500ms ease;
+  animation: showColor 500ms ease;
+}
+.color:last-child {
+  margin-right: 0;
+}
+.color span {
+  padding: 3px 5px;
+  background: black;
+  color: white;
+  -webkit-animation: showColor 1s 500ms ease;
+  animation: showColor 1s 500ms ease;
+}
+@-webkit-keyframes showColor {
+  from {
+    width: 0;
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes showColor {
+  from {
+    width: 0;
+    opacity: 0;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .color {
+    height: 60px;
+    line-height: 60px;
+    margin: 0.2em;
+    width: calc(100% / 4 - 0.567em);
+  }
+}
+
+.support-box-styles {
+  text-align: margin-left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.actions-sidebar {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+.synthbutton {
+  text-align: margin-left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.action-btn {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.color-box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+}
+
+.message-log {
+  margin-top: 1rem;
+}
+#keyboard {
+  display: flex;
+  flex-direction: row;
+}
+
+#keyboard .key {
+  width: 32px;
+  height: 128px;
+  border: solid 1px #333;
+  display: inline-block;
+}
