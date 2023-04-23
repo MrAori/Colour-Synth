@@ -1,5 +1,4 @@
 import "./styles.css";
-import * as Tone from "tone";
 
 const { useState, useEffect } = React;
 
